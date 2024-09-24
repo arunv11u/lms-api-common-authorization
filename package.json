@@ -1,0 +1,58 @@
+{
+	"name": "@arunvaradharajalu/common.learning-management-system-api.authorization",
+	"version": "1.0.0",
+	"description": "This package contains the common authorization module for the Learning Management System services",
+	"main": "./build/index.js",
+	"types": "./build/index.d.ts",
+	"files": [
+		"build/**/*"
+	],
+	"scripts": {
+		"clean": "rimraf build",
+		"build": "npm run clean && tsc --project tsconfig.build.json",
+		"test": "jest --watchAll --verbose --no-cache --detectOpenHandles --env=node --coverage"
+	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node",
+		"roots": [
+			"<rootDir>/test"
+		],
+		"clearMocks": true,
+		"reporters": [
+			"default",
+			[
+				"./node_modules/jest-html-reporter",
+				{
+					"pageTitle": "Common Authorization Module Test Report"
+				}
+			]
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com:arunv11u/lms-api-common-authorization.git"
+	},
+	"keywords": [
+		"common-authorization-learning-mangement-system",
+		"common-authorization-lms"
+	],
+	"author": "Arun Varadharajalu",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/arunv11u/lms-api-common-authorization/issues"
+	},
+	"homepage": "https://github.com/arunv11u/lms-api-common-authorization#readme",
+	"devDependencies": {
+		"@faker-js/faker": "^9.0.2",
+		"@types/jest": "^29.5.12",
+		"@types/jsonwebtoken": "^9.0.7",
+		"jest-html-reporter": "^3.10.2",
+		"rimraf": "^5.0.7",
+		"ts-jest": "^29.1.4"
+	},
+	"dependencies": {
+		"@arunvaradharajalu/common.errors": "^1.1.0",
+		"jsonwebtoken": "^9.0.2"
+	}
+}
