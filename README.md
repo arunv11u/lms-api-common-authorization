@@ -1,5 +1,9 @@
 # @arunvaradharajalu/common.learning-management-system-api.authorization
 
+[![npm version](https://badge.fury.io/js/%40arunvaradharajalu%2Fcommon.learning-management-system-api.authorization.svg)](https://www.npmjs.com/package/@arunvaradharajalu/common.learning-management-system-api.authorization)
+[![GitHub issues](https://img.shields.io/github/issues/arunv11u/lms-api-common-authorization)](https://github.com/arunv11u/lms-api-common-authorization/issues)
+[![GitHub license](https://img.shields.io/github/license/arunv11u/lms-api-common-authorization)](https://github.com/arunv11u/lms-api-common-authorization/blob/master/LICENSE)
+
 ## Overview
 
 This package provides a common authorization module for services within the Learning Management System (LMS). It allows for the validation of bearer authorization tokens using JSON Web Tokens (JWT), ensuring secure access to system resources.
